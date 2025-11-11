@@ -9,6 +9,7 @@ Each exercise focuses on a key Git concept — from basic commits and branching 
 This blog documents all 23 exercises, the exact commands I used, and what I learned along the way.
 Each section includes the terminal commands I ran and a short explanation of what each task taught me.
 
+
 ### 🧩 Exercise 1 – master
 
 **Scenario:** Initialize and verify a new Git exercise environment.
@@ -23,7 +24,8 @@ git start
 git verify
 ```
 
-git start sets up the environment for the current exercise, while git verify checks if your task solution is correct.
+**git start sets up the environment for the current exercise, while git verify checks if your task solution is correct.**
+
 
 ### 🧩 Exercise 2 – commit-one-file
 
@@ -41,7 +43,8 @@ git commit -m "add one file"
 git verify
 ```
 
-Added A.txt to staging and committed it. This teaches how to move files between the working directory, staging area, and repository.
+**Added A.txt to staging and committed it. This teaches how to move files between the working directory, staging area, and repository.**
+
 
 ### 🧩 Exercise 3 – commit-one-file-staged
 
@@ -69,7 +72,8 @@ git commit -m "commit useful files"
 git verify
 ```
 
-Added ignore patterns in .gitignore to skip temporary and compiled files and files of specific types. This ensures a clean, lightweight repository.
+**Added ignore patterns in .gitignore to skip temporary and compiled files and files of specific types. This ensures a clean, lightweight repository.**
+
 
 ### 🧩 Exercise 4 – chase-branch
 
@@ -87,7 +91,8 @@ git merge escaped
 git verify
 ```
 
-Switched to chase-branch and merged escaped into it. Demonstrates basic merging workflow.
+**Switched to chase-branch and merged escaped into it. Demonstrates basic merging workflow.**
+
 
 ### 🧩 Exercise 5 – Merge Conflict
 
@@ -118,7 +123,8 @@ git commit -m "merge and resolve"
 git verify
 ```
 
-Resolved conflicting edits by choosing the correct line and committing the final merged version.
+**Resolved conflicting edits by choosing the correct line and committing the final merged version.**
+
 
 ### 🧩 Exercise 6 – Stash
 
@@ -148,7 +154,8 @@ git commit -am "finish"
 git verify
 ```
 
-Used stash to hide temporary changes, fixed the bug (editing nano.txt), then reapplied and committed previous edits.
+**Used stash to hide temporary changes, fixed the bug (editing nano.txt), then reapplied and committed previous edits.**
+
 
 ### 🧩 Exercise 7 – Change Branch History
 
@@ -166,7 +173,8 @@ git rebase hot-bugfix
 git verify
 ```
 
-Rebased to align commit history and keep a linear project timeline.
+**Rebased to align commit history and keep a linear project timeline.**
+
 
 ### 🧩 Exercise 8 – Untrack Ignored File
 
@@ -185,6 +193,7 @@ git verify
 ```
 
 **--cached removes the file from Git tracking without deleting it from your system.**
+
 
 ### 🧩 Exercise 9 – Fix Case of Filename
 
@@ -208,7 +217,8 @@ git commit -m "lowercase filename"
 git verify
 ```
 
-Reset previous commit, renamed file properly, and recommitted it — avoiding duplication.
+**Reset previous commit, renamed file properly, and recommitted it — avoiding duplication.**
+
 
 ### 🧩 Exercise 10 – Fix Old Typo
 
@@ -225,6 +235,7 @@ git verify
 
 **--amend lets you add or change files in the last commit, cleaning up recent mistakes.**
 
+
 ### 🧩 Exercise 11 – Change Commit Date
 
 **Scenario:** Alter a commit’s timestamp.
@@ -239,6 +250,7 @@ git verify
 ```
 
 **Used --date to set a custom commit date without modifying the message or contents.**
+
 
 ### 🧩 Exercise 12 – Commit Lost
 
@@ -257,6 +269,7 @@ git verify
 ```
 
 **Checked previous HEAD movements via reflog and restored the state using reset --hard.**
+
 
 ### 🧩 Exercise 13 – Split Commit
 
@@ -285,6 +298,7 @@ git verify
 
 **Interactive rebase allowed breaking one large commit into smaller, focused commits.**
 
+
 ### 🧩 Exercise 14 – Commit Lost (Reflog Recovery)
 
 **Scenario:** Recover from accidental history rewrites.
@@ -302,6 +316,7 @@ git verify
 ```
 
 **Again used reflog to roll back to a safe previous commit — vital for undoing mistakes.**
+
 
 ### 🧩 Exercise 15 – Split Commit (Two Files)
 
@@ -330,6 +345,7 @@ git verify
 
 **Unstaged both files, then committed them separately for better granularity.**
 
+
 ### 🧩 Exercise 16 – Too Many Commits
 
 **Scenario:** Reorder or squash multiple commits interactively.
@@ -344,6 +360,7 @@ git verify
 ```
 
 **Interactive rebase (-i) lets you edit, reorder, or squash commits into a cleaner timeline.**
+
 
 ### 🧩 Exercise 17 – Executable
 
@@ -362,6 +379,7 @@ git verify
 ```
 
 **Changed file permissions with --chmod, which Git tracks as a metadata update.**
+
 
 ### 🧩 Exercise 18 – Commit Parts
 
@@ -383,6 +401,7 @@ git verify
 ```
 
 **Patch interactively stages only the selected parts of the file before committing.**
+
 
 ### 🧩 Exercise 19 – Pick Your Features
 
@@ -414,6 +433,7 @@ git verify
 
 **Applied specific commits from other branches and squashed multiple changes into one.**
 
+
 ### 🧩 Exercise 20 – Rebase Complex
 
 **Scenario:** Move commits from one base branch onto another.
@@ -429,6 +449,7 @@ git verify
 
 **Transferred commits from issue-555 to start from your-master, a common cleanup technique.**
 
+
 ### 🧩 Exercise 21 – Invalid Order
 
 **Scenario:** Reorder commits to correct history sequence.
@@ -443,6 +464,7 @@ git verify
 ```
 
 **Fixed commit order by interactively rearranging them.**
+
 
 ### 🧩 Exercise 22 – Find Swearwords
 
@@ -498,6 +520,7 @@ git verify
 
 **Searched commits that added the word “shit” and replaced them with “flower,” cleaning history responsibly.**
 
+
 ### 🧩 Exercise 23 – Find Bug
 
 **Scenario:** Locate the first commit that introduced a bug using git bisect.
@@ -527,6 +550,7 @@ git push origin 4d2725ac4c874dbb207770001def27aed48e9ddb:find-bug
 ```
 
 **Automated bug hunt using bisect, running a base64-decoding test to find when “jackass” appeared.**
+
 
 ## 🏁 Conclusion
 
