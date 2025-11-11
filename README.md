@@ -4,3 +4,5 @@ Recently I got selected into amFOSS, one of the most leading FOSS clubs in India
 
 As part of the amFOSS-Curriculum for freshers, it is compulsary to complete a set of tasks. This repo documents all the details throughout my
 journey.
+
+Since, I am currently working on the tasks right now, as of now the repo is incomplete and will be updated regularly as I complete the tasks.
