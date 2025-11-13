@@ -10,6 +10,8 @@ This blog documents all 23 exercises, the exact commands I used, and what I lear
 
 As it's the first time exploring advanced git commands, I hope I would soon be able to master it through practice !!!
 
+
+
 ### Exercise 1 - master
 
 **Scenario:** To initialize and verify a new Git exercise environment.
@@ -24,6 +26,7 @@ git verify
 ```
 
 **git start sets up the environment for the current exercise, while git verify checks if your task solution is correct.**
+
 
 
 ### Exercise 2 - commit-one-file
@@ -45,6 +48,7 @@ git verify
 **Added A.txt to staging area and committed it. This teaches how to move files between the working directory, staging area, and github repository.**
 
 
+
 ### Exercise 3 - commit-one-file-staged
 
 **Scenario:** To prevent unwanted files from being tracked.
@@ -61,6 +65,7 @@ git verify
 ```
 
 **Removed A.txt from the staging area by using "git reset HEAD A.txt" and then necessary commits was applied.**
+
 
 
 ### Exercise 4 - ignore-them
@@ -92,6 +97,7 @@ git verify
 **Added the path of the file types and directories in .gitignore to skip temporary and compiled files. This ensures a clean, lightweight repository.**
 
 
+
 ###  Exercise 5 - chase-branch
 
 **Scenario:** To merge one branch into another.
@@ -109,6 +115,7 @@ git verify
 ```
 
 **Switched to chase-branch using "git checkout" and merged escaped branch into it by using "git merge". This demonstrates basic merging workflow.**
+
 
 
 ###  Exercise 6 - merge-conflict
@@ -143,6 +150,7 @@ git verify
 **Merged the branches containing the specific commits containing conflicts, using "git checkout" and "git branch". Then manually resolved the conflict on equation.txt by choosing the correct line (equation). Then it was finally added, committed and verified.**
 
 
+
 ### Exercise 7 - save-your-work
 
 **Scenario:** To temporarily save unfinished work and restore it later.
@@ -174,6 +182,7 @@ git verify
 **Used stash to hide temporary changes, or in simple words, temporarily saved the changes without committing or passing to the staging area. Then fixed the bug (editing nano.txt), stash was applied ("git stash apply") and committed previous edits.**
 
 
+
 ### Exercise 8 - change-branch-history
 
 **Scenario:** To reapply branch commits on a new base using rebase.
@@ -193,6 +202,7 @@ git verify
 **Checked out to change-branch-history and then rebased hot-bugfix to it by using "git rebase". This ensures that all the commits in the branch "hot-bugfix" would be placed on top of the commits in the branch "change-branch-history".Rebase helps to align commit history and keep a linear project timeline.**
 
 
+
 ###  Exercise 9 - remove-ignored
 
 **Scenario:** To stop tracking a file while preserving it locally.
@@ -210,6 +220,7 @@ git verify
 ```
 
 **"git rm --cached" removes the file from Git tracking without actually deleting it from your system.**
+
 
 
 ### Exercise 10 - case-sensitive-filename
@@ -237,6 +248,7 @@ git verify
 **Reset previous commit by using "git reset HEAD^", renamed the file properly using "mv", and recommitted it.**
 
 
+
 ### Exercise 11 - fix-typo
 
 **Scenario:** To modify the previous commit without creating a new one.
@@ -253,6 +265,7 @@ git verify
 **"git commit -a --amend" allows to add or change files in the last commit, hence modigying it without creating a new commit.**
 
 
+
 ### Exercise 12 - forge-date
 
 **Scenario:** To alter a commit’s timestamp.
@@ -267,6 +280,7 @@ git verify
 ```
 
 **Used "git commit --amend --no-edit --date" to set a custom commit date without modifying the message or contents and without creating a new commit.**
+
 
 
 ### Exercise 13 - fix-old-typo
@@ -297,6 +311,7 @@ git verify
 **Interactive rebase allowed breaking one large commit into smaller, focused commits. Here in this case, "git rebase -i HEAD^^" is used to rebase the 2 latest commands and then individually add and continue rebasing to achieve multiple commit history.**
 
 
+
 ### Exercise 14 - commit-lost
 
 **Scenario:** To recover a lost commit using git reflog.
@@ -314,6 +329,7 @@ git verify
 ```
 
 **Checked previous HEAD movements via reflog and restored the required commit using "git reset --hard HEAD@{}".**
+
 
 
 ### Exercise 15 - split-commit
@@ -344,6 +360,7 @@ git verify
 **Used "git reset HEAD^" to unstage the last commit then staged and committed multiple times, accordingly.**
 
 
+
 ### Exercise 16 - too-many-commits
 
 **Scenario:** To squash (combine) multiple commits interactively.
@@ -358,6 +375,7 @@ git verify
 ```
 
 **Interactive rebase (-i) lets you edit, reorder, and squash commits into a cleaner timeline.**
+
 
 
 ### Exercise 17 - executable
@@ -377,6 +395,7 @@ git verify
 ```
 
 **Changed file permissions with "--chmod=+x", in which git tracks as a metadata update through "git update-index".**
+
 
 
 ### Exercise 18 - commit-parts
@@ -399,6 +418,7 @@ git verify
 ```
 
 **"git add --patch" interactively stages only the selected parts of a file before committing. So that the user could commit remaining part of the file later.**
+
 
 
 ### Exercise 19 - pick-your-features
@@ -433,6 +453,7 @@ git verify
 **Then checked out to branch "pick-your-features" to select "feature-a", "feature-b" and "feature-c" as combined (git merge --squash feature).**
 
 
+
 ### Exercise 20 - rebase-complex
 
 **Scenario:** To move commits from one base branch onto another.
@@ -449,6 +470,7 @@ git verify
 **Transferred commits from issue-555 to start from your-master, by using "git rebase --onto".**
 
 
+
 ### Exercise 21 - invalid-order
 
 **Scenario:** To reorder commits to correct history sequence.
@@ -463,6 +485,7 @@ git verify
 ```
 
 **Fixed commit order by interactively rearranging them (rearrange the lines).**
+
 
 
 ### Exercise 22 - find-swearwords
@@ -520,6 +543,7 @@ git verify
 **Searched commits that added the word “shit” by using "git log -S", edited the commits and replaced them with “flower,” and amended commits and continued rebasing until completion.**
 
 
+
 ###  Exercise 23 - find-bug
 
 **Scenario:** To locate the first commit that introduced a bug (the bug is occurence of word "jackass" in a text file with base-64 encryption) using git bisect.
@@ -550,6 +574,7 @@ git push origin 4d2725ac4c874dbb207770001def27aed48e9ddb:find-bug
 **"git bisect good 1.0" to mark branch 1.0 as bug-free.**
 **Then for each commit the bug is checked by searching for the word "jackass" by decoding home-screen-text.txt with openssl base64 decryption.**
 **The hash value of the commit containing the bug or the commit in which the word "jackass" was introduced to home-screen-text.txt is pushed.**
+
 
 ## Conclusion
 
