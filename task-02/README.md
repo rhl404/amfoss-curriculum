@@ -1,8 +1,8 @@
 # Software Requirements Specification for MeloFi
-**Submitted by: Rahul Krishna R\n**
-**Submitted to: amFOSS Anveshan 20025\n**
-**Submission Date: 14-11-2025\n**
-**Base Version: 1.0\n**
+**Submitted by: Rahul Krishna R**
+**Submitted to: amFOSS Anveshan 2025**
+**Submission Date: 14-11-2025**
+**Base Version: 1.0**
 
 ## 1. Introduction
 ### 1.1 Purpose
@@ -45,19 +45,24 @@ A simple user system supports the users to follow each others to maintain basic 
 
 ## 4. Non-Functional Requirements
 **1. Usability:** The interface must be minimal, clean, premium and easy to navigate for beginners.
+
 **2. Performance:** Pages should load quickly, and audio playback should start with minimal delay.
+
 **3. Reliability:** The app should function smoothly without frequent crashes or bugs.
+
 **4. Compatibility:** Must adapt to display on different screen sizes for both web and mobile.
+
 **5. Security:** User credentials should be stored securely, and access to playlists must be account-restricted.
+
 **6. Scalability:** The system should be able to handle the data of various playlists and users safely and without crashes.
 
 ## 5. Basic Tech Stack
-### 1. Wireframing & UI Design
+### 5.1. Wireframing & UI Design
 **Figma:** Used for creating the structure or wireframes and high-quality UI designs for all screens for MeloFi.
 (Welcome, Home, Search, Player, Playlist, Profile)
-### 2. Frontend
+### 5.2. Frontend
 **React.js:** a javascript library for building the web application.
-### 3. Backend
+### 5.3. Backend
 **Flask(Python):** - for the backend framework.
 **REST APIs:** - for handling the data exchange between frontend and backend.
 
