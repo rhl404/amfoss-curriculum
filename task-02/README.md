@@ -44,12 +44,12 @@ A simple user system supports the users to follow each others to maintain basic 
 9. The system should allow playback on both mobile and web versions.
 
 ## 4. Non-Functional Requirements
-**Usability:** The interface must be minimal, clean, premium and easy to navigate for beginners.
-**Performance:** Pages should load quickly, and audio playback should start with minimal delay.
-**Reliability:** The app should function smoothly without frequent crashes or bugs.
-**Compatibility:** Must adapt to display on different screen sizes for both web and mobile.
-**Security:** User credentials should be stored securely, and access to playlists must be account-restricted.
-**Scalability:** The system should be able to handle the data of various playlists and users safely and without crashes.
+**1. Usability:** The interface must be minimal, clean, premium and easy to navigate for beginners.
+**2. Performance:** Pages should load quickly, and audio playback should start with minimal delay.
+**3. Reliability:** The app should function smoothly without frequent crashes or bugs.
+**4. Compatibility:** Must adapt to display on different screen sizes for both web and mobile.
+**5. Security:** User credentials should be stored securely, and access to playlists must be account-restricted.
+**6. Scalability:** The system should be able to handle the data of various playlists and users safely and without crashes.
 
 ## 5. Basic Tech Stack
 ### 1. Wireframing & UI Design
